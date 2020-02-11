@@ -1,10 +1,17 @@
-# Proyecto Global Integrador: Control de Accionamiento de CA con Motor SÃ­ncronico de Imanes Permanentes
+# Proyecto Global Integrador: Control de Accionamiento de CA con Motor Sincrónico de Imanes Permanentes
 
 ## Tabla de Contenidos
 
-1. IntroducciÃ³n
-2. Modelado, AnÃ¡lisis y SimulaciÃ³n dinÃ¡mica a Lazo Abierto (sin control realimentado)
-    1. Modelo matemÃ¡tico equivalente (1 grado de libertad) del subsistema mecÃ¡nico del motor
+1. Introducción
+2. Modelado, Análisis y Simulación dinámica a Lazo Abierto (sin control realimentado)
+    1. Modelo matemático equivalente (1 grado de libertad) del subsistema mecánico del motor
+    2. Modelo dinámico del sistema físico completo, incorporando el subsistema electromagnético y térmico
+        1. Modelo global no lineal (NL), para $i^{r}_{ds}(t)$ genérica
 
-## DescripciÃ³n
-El estudio se centra en el modelado, diseÃ±o, simulaciÃ³n y anÃ¡lisis de desempeÃ±o de un **sistema de control automÃ¡tico de posiciÃ³n y movimiento** para un **accionamiento electromecÃ¡nico de 4 cuadrantes**, compuesto por: mÃ¡quina elÃ©ctrica de corriente alterna (CA) trifÃ¡sica sincrÃ³nica con excitaciÃ³n por imanes permanentes (PMSM), alimentada por inversor trifÃ¡sico desde fuente de CC; reductor de velocidad planetario de salida hacia la carga mecÃ¡nica; y realimentaciÃ³n con 1 sensor de posiciÃ³n (encoder) en el eje del motor, mÃ¡s 3 sensores de corriente instantÃ¡nea de fases en la salida del inversor al estator.
+## Descripción
+El estudio se centra en el modelado, diseño, simulación y análisis de desempeño de un **sistema de control 
+automático de posición y movimiento** para un **accionamiento electromecánico de 4 cuadrantes**, compuesto
+ por: máquina eléctrica de corriente alterna (CA) trifásica sincrónica con excitación por imanes permanentes
+ (PMSM), alimentada por inversor trifásico desde fuente de CC; reductor de velocidad planetario de salida
+ hacia la carga mecánica; y realimentación con 1 sensor de posición (encoder) en el eje del motor, más 3 
+sensores de corriente instantánea de fases en la salida del inversor al estator.
