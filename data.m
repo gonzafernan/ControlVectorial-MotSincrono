@@ -24,3 +24,18 @@ Jeq = Jm + Jl/r^2;
 % Coeficiente de fricción viscosa equivalente
 beq = bm + bl/r^2;
 
+%% Parámetros subsistema electromagnético
+
+% Pares de polos
+Pp = 3;
+% Flujo magnético equivalente de imanes concatenado por espiras del
+% bobinado del estator observado desde el rotor
+lambda_rm = 0.01546;
+% Inductancia de estator en el eje directo
+Ld = 6.6e-3;
+% Inductancia de estator en el eje en cuadratura
+Lq = 5.8e-3;
+% Inductancia de dispersión de estator
+Lls = 0.8e-3;
+% Resistencia del estator por fase, a 40°C
+Rs = 1.02;
