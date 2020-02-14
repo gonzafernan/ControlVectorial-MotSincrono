@@ -39,3 +39,15 @@ Lq = 5.8e-3;
 Lls = 0.8e-3;
 % Resistencia del estator por fase, a 40°C
 Rs = 1.02;
+
+%% Parámetros subsistema térmico
+
+% Capacitancia térmica de estator
+Cts = 1.091;
+% Resistencia térmica estator-ambiente
+Rts_amb = 55;
+
+%% Condiciones del entorno
+
+% Temperatura ambiente máxima
+Tamb_max = 40;
