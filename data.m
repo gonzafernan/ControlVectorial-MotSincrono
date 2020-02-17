@@ -7,6 +7,10 @@ DJl = 0.1260;
 bl = 0;
 Dbl = 0.0630;
 
+% Arreglo con los rangos de los parámetros
+Jl_range = [Jl-DJl  Jl  Jl+DJl];
+bl_range = [bl-Dbl  bl  bl+Dbl];
+
 %% Relación de reducción total
 r = 314.3008;
 
@@ -23,6 +27,10 @@ bm = 1.5e-5;
 Jeq = Jm + Jl/r^2;
 % Coeficiente de fricción viscosa equivalente
 beq = bm + bl/r^2;
+
+% Arreglo con los rangos de los parámetros equivalentes
+Jeq_range = Jm + Jl_range/r^2;
+beq_range = bm + bl_range/r^2;
 
 %% Parámetros subsistema electromagnético
 
@@ -46,6 +54,10 @@ Rs = 1.02;
 Cts = 1.091;
 % Resistencia térmica estator-ambiente
 Rts_amb = 55;
+
+alpha_Cu = 3.9e-3;
+Ts_range = [50:10:120];
+Rs_var = Rs*(1 + alpha_Cu*(Ts_range(:) - Tamb_max));
 
 %% Condiciones del entorno
 
