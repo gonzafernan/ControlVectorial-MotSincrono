@@ -32,4 +32,12 @@ end
 hold off;
 
 %% Evaluación de la estabilidad. Determinación de la frecuencia natural y el amortiguamiento
+disp("Parámetros del sistema a lazo abierto:");
 
+% Frecuencia natural del sistema a lazo abierto
+omega_n = sqrt(1/(Lq*Jeq)*(Rs*beq + (3/2)*Pp^2*lambda_rm^2));
+disp("Frecuencia natural: wn = " + omega_n);
+
+% Amortiguamiento relativa del sistema a lazo abierto
+zeta = (Rs/Lq + beq/Jeq) / (2*sqrt(1/(Lq*Jeq)*(Rs*beq + (3/2)*Pp^2*lambda_rm^2)));
+disp("Amortiguamiento relativo: zeta = " + zeta);

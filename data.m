@@ -52,14 +52,13 @@ Rs = 1.02;
 
 % Capacitancia térmica de estator
 Cts = 1.091;
-% Resistencia térmica estator-ambiente
-Rts_amb = 55;
 
 alpha_Cu = 3.9e-3;
 Ts_range = [50:10:120];
-Rs_var = Rs*(1 + alpha_Cu*(Ts_range(:) - Tamb_max));
-
-%% Condiciones del entorno
 
 % Temperatura ambiente máxima
 Tamb_max = 40;
+
+% Resistencia térmica estator-ambiente
+Rts_amb = 55;
+Rs_var = Rs*(1 + alpha_Cu*(Ts_range(:) - Tamb_max)); % Contemplando variación con la temperatura
