@@ -11,6 +11,9 @@ sensores de corriente instantánea de fases en la salida del inversor al estator.
 ## Resultados
 
 ### Análisis de Estabilidad a lazo abierto para Sistema LTI
+
+#### Determinación de polos y ceros
+
 En la siguiente imagen se observa el mapa complejo de los polos y ceros de el sistema LTI a lazo abierto:
 
 ![](imgs/OpenLoop_PoleZeroMap.png)
@@ -20,3 +23,38 @@ entre un mínimo y un máximo, y la resistencia eléctrica del estator se puede ana
 su temperatura, se muestra los valores que toman los polos y el cero al considerar los valores medios o 
 nominales (en negro), mínimos (azul) y máximos (rojo) de Jeq y beq mientras la temperatura varía de 
 40°C (marca de mayor espesor) a 115°C.
+
+#### Evaluación de estabilidad. Determinación de la frecuencia natural y el amortiguamiento
+
+- Frecuencia natural del sistema a lazo abierto: **wn = 314.5047 rad/s**
+- Amortiguamiento relativo del sistema a lazo abierto: **s = 0.2838** (Respuesta subamortiguada)
+
+### Respuesta Dinámica en el Dominio del Tiempo para Sistema LTI
+A continuación se expone la respuesta del sistema LTI a lazo abierto ante un escalón de tensión de 
+**+19.596V** a los **0.1s**, seguido de un escalón de torque de carga de **+1.57Nm** a los **0.3s**.
+
+Escalón de tensión             |  Escalón de torque de carga
+:-------------------------:|:-------------------------:
+![](imgs/OpenLoop_TorqueStep.png)  |  ![](imgs/OpenLoop_VoltageStep.png)
+
+La respuesta del ángulo del eje motor en el tiempo es la siguiente:
+
+![](imgs/OpenLoop_Theta.png)
+
+La respuesta de la velocidad angular del eje motor en el tiempo es la siguiente:
+
+Respuesta de velocidad angular |  Ampliación de la respuesta en 0.3s (escalón de torque de carga)
+:-------------------------:|:-------------------------:
+![](imgs/OpenLoop_Omega_1.png)  |  ![](imgs/OpenLoop_Omega_2.png)
+
+La respuesta del torque motor en el tiempo es la siguiente:
+
+Respuesta del torque motor |  Ampliación de la respuesta en 0.3s (escalón de torque de carga)
+:-------------------------:|:-------------------------:
+![](imgs/OpenLoop_Tm_1.png)  |  ![](imgs/OpenLoop_Tm_2.png)
+
+La temperatura del estator en el tiempo es la siguiente:
+
+Temperatura del estator |  Temperatura en lapso de tiempo mayor
+:-------------------------:|:-------------------------:
+![](imgs/OpenLoop_Ts_1.png)  |  ![](imgs/OpenLoop_Ts_2.png)
