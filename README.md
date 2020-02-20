@@ -37,6 +37,10 @@ Escalón de tensión             |  Escalón de torque de carga
 :-------------------------:|:-------------------------:
 ![](imgs/OpenLoop_TorqueStep.png)  |  ![](imgs/OpenLoop_VoltageStep.png)
 
+Tensión en componentes abc, aplicando transformación inversa de Park:
+
+![](imgs/OpenLoop_Vabc.png)
+
 La respuesta del ángulo del eje motor en el tiempo es la siguiente:
 
 ![](imgs/OpenLoop_Theta.png)
@@ -46,6 +50,15 @@ La respuesta de la velocidad angular del eje motor en el tiempo es la siguiente:
 Respuesta de velocidad angular |  Ampliación de la respuesta en 0.3s (escalón de torque de carga)
 :-------------------------:|:-------------------------:
 ![](imgs/OpenLoop_Omega_1.png)  |  ![](imgs/OpenLoop_Omega_2.png)
+
+La corriente iq a la izquierda y a la derecha en componentes abc mediante transformación inversa de Park:
+
+Corriente iq |  Corrientes de fase a, b y c
+:-------------------------:|:-------------------------:
+![](imgs/OpenLoop_Iq.png)  |  ![](imgs/OpenLoop_Iabc_1.png)
+
+Se verificó que el valor de las componentes d y 0 de corriente tienen valor constante nulo, 
+debido a las restricciones impuestas.
 
 La respuesta del torque motor en el tiempo es la siguiente:
 
