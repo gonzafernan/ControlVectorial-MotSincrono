@@ -71,3 +71,8 @@ La temperatura del estator en el tiempo es la siguiente:
 Temperatura del estator |  Temperatura en lapso de tiempo mayor
 :-------------------------:|:-------------------------:
 ![](imgs/OpenLoop_Ts_1.png)  |  ![](imgs/OpenLoop_Ts_2.png)
+
+### Análisis de Controlabilidad del Sistema LTI
+
+### Análisis de Observabilidad del Sistema LTI
+
