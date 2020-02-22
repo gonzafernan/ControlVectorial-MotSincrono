@@ -25,3 +25,8 @@ ba = Jeq*omega_pos*n;       disp("    ba = " + ba);
 ksa = Jeq*omega_pos^2*n;    disp("    ksa = " + ksa);
 ksia = Jeq*omega_pos^3;     disp("    ksia = " + ksia);
 
+%% Diseño de Observador de Estado de orden reducido para mecánica del sistema
+% Constantes proporcional, derivativa e integral
+disp("Constantes de PID observador de estado de orden reducido:");
+ke_theta = 6400;        disp("    ke_theta (D) = " + ke_theta);
+ke_omega = 1.024e7;     disp("    ke_omega (P) = " + ke_omega);
